@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661AD6EB1B5E841F00D98D9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD6EA1B5E841F00D98D9F /* AppDelegate.swift */; };
+		661AD6ED1B5E841F00D98D9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD6EC1B5E841F00D98D9F /* ViewController.swift */; };
+		661AD6F01B5E841F00D98D9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661AD6EE1B5E841F00D98D9F /* Main.storyboard */; };
+		661AD6F21B5E841F00D98D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661AD6F11B5E841F00D98D9F /* Assets.xcassets */; };
+		661AD6F51B5E841F00D98D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661AD6F31B5E841F00D98D9F /* LaunchScreen.storyboard */; };
+		661AD7001B5E841F00D98D9F /* SK8_TrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD6FF1B5E841F00D98D9F /* SK8_TrainingTests.swift */; };
+		661AD70B1B5E841F00D98D9F /* SK8_TrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD70A1B5E841F00D98D9F /* SK8_TrainingUITests.swift */; };
+		661AD7191B5E854C00D98D9F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD7181B5E854C00D98D9F /* Product.swift */; };
+		661AD71B1B5E8BFF00D98D9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD71A1B5E8BFF00D98D9F /* DetailViewController.swift */; };
+		661AD71D1B5E8C2000D98D9F /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD71C1B5E8C2000D98D9F /* CartViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		661AD6FC1B5E841F00D98D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661AD6DF1B5E841F00D98D9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661AD6E61B5E841F00D98D9F;
+			remoteInfo = "SK8 Training";
+		};
+		661AD7071B5E841F00D98D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661AD6DF1B5E841F00D98D9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661AD6E61B5E841F00D98D9F;
+			remoteInfo = "SK8 Training";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		661AD6E71B5E841F00D98D9F /* SK8 Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SK8 Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		661AD6EA1B5E841F00D98D9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		661AD6EC1B5E841F00D98D9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		661AD6EF1B5E841F00D98D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		661AD6F11B5E841F00D98D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		661AD6F41B5E841F00D98D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		661AD6F61B5E841F00D98D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661AD6FB1B5E841F00D98D9F /* SK8 TrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SK8 TrainingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		661AD6FF1B5E841F00D98D9F /* SK8_TrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SK8_TrainingTests.swift; sourceTree = "<group>"; };
+		661AD7011B5E841F00D98D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661AD7061B5E841F00D98D9F /* SK8 TrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SK8 TrainingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		661AD70A1B5E841F00D98D9F /* SK8_TrainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SK8_TrainingUITests.swift; sourceTree = "<group>"; };
+		661AD70C1B5E841F00D98D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661AD7181B5E854C00D98D9F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		661AD71A1B5E8BFF00D98D9F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		661AD71C1B5E8C2000D98D9F /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		661AD6E41B5E841F00D98D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661AD6F81B5E841F00D98D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661AD7031B5E841F00D98D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		661AD6DE1B5E841F00D98D9F = {
+			isa = PBXGroup;
+			children = (
+				661AD6E91B5E841F00D98D9F /* SK8 Training */,
+				661AD6FE1B5E841F00D98D9F /* SK8 TrainingTests */,
+				661AD7091B5E841F00D98D9F /* SK8 TrainingUITests */,
+				661AD6E81B5E841F00D98D9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		661AD6E81B5E841F00D98D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				661AD6E71B5E841F00D98D9F /* SK8 Training.app */,
+				661AD6FB1B5E841F00D98D9F /* SK8 TrainingTests.xctest */,
+				661AD7061B5E841F00D98D9F /* SK8 TrainingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		661AD6E91B5E841F00D98D9F /* SK8 Training */ = {
+			isa = PBXGroup;
+			children = (
+				661AD6EA1B5E841F00D98D9F /* AppDelegate.swift */,
+				661AD6EC1B5E841F00D98D9F /* ViewController.swift */,
+				661AD6EE1B5E841F00D98D9F /* Main.storyboard */,
+				661AD6F11B5E841F00D98D9F /* Assets.xcassets */,
+				661AD6F31B5E841F00D98D9F /* LaunchScreen.storyboard */,
+				661AD6F61B5E841F00D98D9F /* Info.plist */,
+				661AD7181B5E854C00D98D9F /* Product.swift */,
+				661AD71A1B5E8BFF00D98D9F /* DetailViewController.swift */,
+				661AD71C1B5E8C2000D98D9F /* CartViewController.swift */,
+			);
+			path = "SK8 Training";
+			sourceTree = "<group>";
+		};
+		661AD6FE1B5E841F00D98D9F /* SK8 TrainingTests */ = {
+			isa = PBXGroup;
+			children = (
+				661AD6FF1B5E841F00D98D9F /* SK8_TrainingTests.swift */,
+				661AD7011B5E841F00D98D9F /* Info.plist */,
+			);
+			path = "SK8 TrainingTests";
+			sourceTree = "<group>";
+		};
+		661AD7091B5E841F00D98D9F /* SK8 TrainingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				661AD70A1B5E841F00D98D9F /* SK8_TrainingUITests.swift */,
+				661AD70C1B5E841F00D98D9F /* Info.plist */,
+			);
+			path = "SK8 TrainingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		661AD6E61B5E841F00D98D9F /* SK8 Training */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661AD70F1B5E841F00D98D9F /* Build configuration list for PBXNativeTarget "SK8 Training" */;
+			buildPhases = (
+				661AD6E31B5E841F00D98D9F /* Sources */,
+				661AD6E41B5E841F00D98D9F /* Frameworks */,
+				661AD6E51B5E841F00D98D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SK8 Training";
+			productName = "SK8 Training";
+			productReference = 661AD6E71B5E841F00D98D9F /* SK8 Training.app */;
+			productType = "com.apple.product-type.application";
+		};
+		661AD6FA1B5E841F00D98D9F /* SK8 TrainingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661AD7121B5E841F00D98D9F /* Build configuration list for PBXNativeTarget "SK8 TrainingTests" */;
+			buildPhases = (
+				661AD6F71B5E841F00D98D9F /* Sources */,
+				661AD6F81B5E841F00D98D9F /* Frameworks */,
+				661AD6F91B5E841F00D98D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				661AD6FD1B5E841F00D98D9F /* PBXTargetDependency */,
+			);
+			name = "SK8 TrainingTests";
+			productName = "SK8 TrainingTests";
+			productReference = 661AD6FB1B5E841F00D98D9F /* SK8 TrainingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		661AD7051B5E841F00D98D9F /* SK8 TrainingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661AD7151B5E841F00D98D9F /* Build configuration list for PBXNativeTarget "SK8 TrainingUITests" */;
+			buildPhases = (
+				661AD7021B5E841F00D98D9F /* Sources */,
+				661AD7031B5E841F00D98D9F /* Frameworks */,
+				661AD7041B5E841F00D98D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				661AD7081B5E841F00D98D9F /* PBXTargetDependency */,
+			);
+			name = "SK8 TrainingUITests";
+			productName = "SK8 TrainingUITests";
+			productReference = 661AD7061B5E841F00D98D9F /* SK8 TrainingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		661AD6DF1B5E841F00D98D9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Shaowei Zhang";
+				TargetAttributes = {
+					661AD6E61B5E841F00D98D9F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					661AD6FA1B5E841F00D98D9F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 661AD6E61B5E841F00D98D9F;
+					};
+					661AD7051B5E841F00D98D9F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 661AD6E61B5E841F00D98D9F;
+					};
+				};
+			};
+			buildConfigurationList = 661AD6E21B5E841F00D98D9F /* Build configuration list for PBXProject "SK8 Training" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 661AD6DE1B5E841F00D98D9F;
+			productRefGroup = 661AD6E81B5E841F00D98D9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				661AD6E61B5E841F00D98D9F /* SK8 Training */,
+				661AD6FA1B5E841F00D98D9F /* SK8 TrainingTests */,
+				661AD7051B5E841F00D98D9F /* SK8 TrainingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		661AD6E51B5E841F00D98D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661AD6F51B5E841F00D98D9F /* LaunchScreen.storyboard in Resources */,
+				661AD6F21B5E841F00D98D9F /* Assets.xcassets in Resources */,
+				661AD6F01B5E841F00D98D9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661AD6F91B5E841F00D98D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661AD7041B5E841F00D98D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		661AD6E31B5E841F00D98D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661AD6ED1B5E841F00D98D9F /* ViewController.swift in Sources */,
+				661AD6EB1B5E841F00D98D9F /* AppDelegate.swift in Sources */,
+				661AD71D1B5E8C2000D98D9F /* CartViewController.swift in Sources */,
+				661AD7191B5E854C00D98D9F /* Product.swift in Sources */,
+				661AD71B1B5E8BFF00D98D9F /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661AD6F71B5E841F00D98D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661AD7001B5E841F00D98D9F /* SK8_TrainingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661AD7021B5E841F00D98D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661AD70B1B5E841F00D98D9F /* SK8_TrainingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		661AD6FD1B5E841F00D98D9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661AD6E61B5E841F00D98D9F /* SK8 Training */;
+			targetProxy = 661AD6FC1B5E841F00D98D9F /* PBXContainerItemProxy */;
+		};
+		661AD7081B5E841F00D98D9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661AD6E61B5E841F00D98D9F /* SK8 Training */;
+			targetProxy = 661AD7071B5E841F00D98D9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		661AD6EE1B5E841F00D98D9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661AD6EF1B5E841F00D98D9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		661AD6F31B5E841F00D98D9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661AD6F41B5E841F00D98D9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		661AD70D1B5E841F00D98D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		661AD70E1B5E841F00D98D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		661AD7101B5E841F00D98D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SK8 Training/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shaoweizhang.com.SK8-Training";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		661AD7111B5E841F00D98D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SK8 Training/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shaoweizhang.com.SK8-Training";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		661AD7131B5E841F00D98D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SK8 TrainingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shaoweizhang.com.SK8-TrainingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SK8 Training.app/SK8 Training";
+			};
+			name = Debug;
+		};
+		661AD7141B5E841F00D98D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SK8 TrainingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shaoweizhang.com.SK8-TrainingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SK8 Training.app/SK8 Training";
+			};
+			name = Release;
+		};
+		661AD7161B5E841F00D98D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SK8 TrainingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shaoweizhang.com.SK8-TrainingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SK8 Training";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		661AD7171B5E841F00D98D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SK8 TrainingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shaoweizhang.com.SK8-TrainingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SK8 Training";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		661AD6E21B5E841F00D98D9F /* Build configuration list for PBXProject "SK8 Training" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661AD70D1B5E841F00D98D9F /* Debug */,
+				661AD70E1B5E841F00D98D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		661AD70F1B5E841F00D98D9F /* Build configuration list for PBXNativeTarget "SK8 Training" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661AD7101B5E841F00D98D9F /* Debug */,
+				661AD7111B5E841F00D98D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		661AD7121B5E841F00D98D9F /* Build configuration list for PBXNativeTarget "SK8 TrainingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661AD7131B5E841F00D98D9F /* Debug */,
+				661AD7141B5E841F00D98D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		661AD7151B5E841F00D98D9F /* Build configuration list for PBXNativeTarget "SK8 TrainingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661AD7161B5E841F00D98D9F /* Debug */,
+				661AD7171B5E841F00D98D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 661AD6DF1B5E841F00D98D9F /* Project object */;
+}
