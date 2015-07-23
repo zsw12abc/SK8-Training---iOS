@@ -16,6 +16,7 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,6 +48,10 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
             let indexPath = CollectionView.indexPathForCell(cell)
             secondScene.product = products[indexPath!.row]
         }
+    }
+    @IBAction func close(segue: UIStoryboardSegue){
+        //        print("closed")
+        CollectionView.reloadData()
     }
     
 }

@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QWM-xi-cWH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QWM-xi-cWH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="qka-dN-LCP">
@@ -88,14 +88,28 @@
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="mge-Db-fOi"/>
                                 </connections>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEJ-jk-fKj">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Grid" id="Geo-7X-ZdQ">
+                                        <connections>
+                                            <segue destination="9SQ-Ij-mce" kind="push" id="2NR-Hj-rfI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="QWM-xi-cWH" secondAttribute="trailing" id="EWY-Jn-WeG"/>
-                            <constraint firstItem="QWM-xi-cWH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lbj-1x-kA7"/>
-                            <constraint firstItem="QWM-xi-cWH" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pPJ-o5-4wJ"/>
-                            <constraint firstItem="QWM-xi-cWH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ruW-cu-5xj"/>
+                            <constraint firstItem="NEJ-jk-fKj" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="7wg-Ba-5gv"/>
+                            <constraint firstItem="NEJ-jk-fKj" firstAttribute="top" secondItem="QWM-xi-cWH" secondAttribute="bottom" id="8at-Jk-C9d"/>
+                            <constraint firstItem="QWM-xi-cWH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Frl-ja-4Oy"/>
+                            <constraint firstAttribute="trailing" secondItem="NEJ-jk-fKj" secondAttribute="trailing" id="H5F-Fp-E3D"/>
+                            <constraint firstItem="NEJ-jk-fKj" firstAttribute="leading" secondItem="QWM-xi-cWH" secondAttribute="leading" id="MT4-KJ-y83"/>
+                            <constraint firstItem="QWM-xi-cWH" firstAttribute="trailing" secondItem="NEJ-jk-fKj" secondAttribute="trailing" id="a1c-6R-ful"/>
+                            <constraint firstItem="QWM-xi-cWH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yuI-bq-01w"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="List" id="uSO-wG-e5G"/>
@@ -136,7 +150,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tvy-iz-Zaf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tvy-iz-Zaf">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -254,9 +268,9 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1540" y="379"/>
+            <point key="canvasLocation" x="1663" y="379"/>
         </scene>
-        <!--Grid-->
+        <!--Grid Product-->
         <scene sceneID="lGc-gA-SEY">
             <objects>
                 <viewController id="9SQ-Ij-mce" customClass="CollectionViewController" customModule="SK8_Training" customModuleProvider="target" sceneMemberID="viewController">
@@ -271,32 +285,33 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-BS-Z79">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RrZ-5t-5iv">
-                                    <size key="itemSize" width="153" height="149"/>
+                                    <size key="itemSize" width="150" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="JQh-8N-Nu8" customClass="colvwCell" customModule="SK8_Training" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="153" height="149"/>
+                                        <rect key="frame" x="0.0" y="64" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="153" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="101" contentMode="center" image="iphone6" translatesAutoresizingMaskIntoConstraints="NO" id="UwO-ss-mQ8">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="101" contentMode="center" misplaced="YES" image="iphone6" translatesAutoresizingMaskIntoConstraints="NO" id="UwO-ss-mQ8">
                                                     <rect key="frame" x="52" y="8" width="50" height="50"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="aqg-6a-A64"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf1-Ce-onH">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="iPhone 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf1-Ce-onH">
                                                     <rect key="frame" x="8" y="82" width="138" height="59"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
@@ -305,12 +320,12 @@
                                         </view>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstItem="UwO-ss-mQ8" firstAttribute="top" secondItem="JQh-8N-Nu8" secondAttribute="topMargin" id="1Mh-tn-v6e"/>
-                                            <constraint firstItem="bf1-Ce-onH" firstAttribute="leading" secondItem="JQh-8N-Nu8" secondAttribute="leadingMargin" id="4qb-Ay-v9h"/>
-                                            <constraint firstItem="bf1-Ce-onH" firstAttribute="top" secondItem="UwO-ss-mQ8" secondAttribute="bottom" constant="24" id="Aqn-d2-10Y"/>
-                                            <constraint firstItem="UwO-ss-mQ8" firstAttribute="centerX" secondItem="JQh-8N-Nu8" secondAttribute="centerX" id="NYV-Ec-gie"/>
-                                            <constraint firstItem="bf1-Ce-onH" firstAttribute="bottom" secondItem="JQh-8N-Nu8" secondAttribute="bottomMargin" id="QMg-82-rUb"/>
-                                            <constraint firstItem="bf1-Ce-onH" firstAttribute="centerX" secondItem="UwO-ss-mQ8" secondAttribute="centerX" id="wws-pE-Z2u"/>
+                                            <constraint firstItem="UwO-ss-mQ8" firstAttribute="top" secondItem="JQh-8N-Nu8" secondAttribute="topMargin" id="FNz-49-ids"/>
+                                            <constraint firstItem="bf1-Ce-onH" firstAttribute="bottom" secondItem="JQh-8N-Nu8" secondAttribute="bottomMargin" id="GhR-KL-J4f"/>
+                                            <constraint firstItem="bf1-Ce-onH" firstAttribute="leading" secondItem="JQh-8N-Nu8" secondAttribute="leadingMargin" id="Hud-Mn-ajO"/>
+                                            <constraint firstItem="bf1-Ce-onH" firstAttribute="centerX" secondItem="JQh-8N-Nu8" secondAttribute="centerX" id="bf6-9g-bgZ"/>
+                                            <constraint firstItem="UwO-ss-mQ8" firstAttribute="centerX" secondItem="bf1-Ce-onH" secondAttribute="centerX" id="evc-VJ-brC"/>
+                                            <constraint firstItem="bf1-Ce-onH" firstAttribute="top" secondItem="UwO-ss-mQ8" secondAttribute="bottom" constant="24" id="lfu-xp-his"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageCell" destination="UwO-ss-mQ8" id="nup-qZ-8qD"/>
@@ -328,13 +343,20 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Wge-BS-Z79" secondAttribute="trailing" id="0Y7-6X-Uty"/>
-                            <constraint firstItem="Wge-BS-Z79" firstAttribute="bottom" secondItem="ocn-Hs-Lkb" secondAttribute="top" id="WTZ-oV-Tex"/>
-                            <constraint firstItem="Wge-BS-Z79" firstAttribute="top" secondItem="3fd-zK-gtb" secondAttribute="top" id="ppT-yL-FG7"/>
-                            <constraint firstItem="Wge-BS-Z79" firstAttribute="leading" secondItem="3fd-zK-gtb" secondAttribute="leading" id="toF-CH-laj"/>
+                            <constraint firstItem="Wge-BS-Z79" firstAttribute="top" secondItem="3fd-zK-gtb" secondAttribute="top" id="7bF-c2-8s5"/>
+                            <constraint firstAttribute="trailing" secondItem="Wge-BS-Z79" secondAttribute="trailing" id="AYK-XS-zg8"/>
+                            <constraint firstItem="Wge-BS-Z79" firstAttribute="leading" secondItem="3fd-zK-gtb" secondAttribute="leading" id="Aop-AA-6Vs"/>
+                            <constraint firstItem="ocn-Hs-Lkb" firstAttribute="top" secondItem="Wge-BS-Z79" secondAttribute="bottom" constant="49" id="vXB-Rw-fzw"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Grid" id="78p-0T-m7N"/>
+                    <navigationItem key="navigationItem" title="Grid Product" id="jQY-gb-vIQ">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="qkm-aa-FTc">
+                            <connections>
+                                <segue destination="70i-LN-8uR" kind="push" id="TPZ-mx-3Ug"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="CollectionView" destination="Wge-BS-Z79" id="CYy-UC-3eI"/>
                     </connections>
@@ -466,7 +488,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYQ-ah-lA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="IBi-Zp-fKg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1336" y="1096"/>
+            <point key="canvasLocation" x="1520" y="1096"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jdX-c8-FpP">
@@ -480,39 +502,19 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="nBC-e1-mjz" kind="relationship" relationship="rootViewController" id="Eu5-Za-GOX"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4vp-02-25R"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdc-3O-xWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173" y="379"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="T9Z-qw-exW">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nBC-e1-mjz" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="vBJ-1x-re5"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="EKY-As-pJN">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="i0Y-MN-0CV"/>
-                        <segue destination="9SQ-Ij-mce" kind="relationship" relationship="viewControllers" id="gQw-vD-Hg9"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xla-uP-PVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="591" y="379"/>
+            <point key="canvasLocation" x="702" y="379"/>
         </scene>
     </scenes>
     <resources>
         <image name="iphone6" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6IF-Kf-N5H"/>
+        <segue reference="3cs-2J-CKT"/>
+        <segue reference="TPZ-mx-3Ug"/>
     </inferredMetricsTieBreakers>
 </document>
