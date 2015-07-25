@@ -50,6 +50,8 @@ class DetailViewController: UIViewController {
             }else{
                 cart.append(product!)
             }
+        }else if product!.num == 0 {
+            cart.removeAtIndex(products.indexOf(product!)!)
         }
     }
     

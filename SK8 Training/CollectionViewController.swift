@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 //var productSelected: Product = nil
 class CollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     var productID : Int = 0
@@ -16,7 +17,30 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var layout = self.CollectionView.collectionViewLayout as! CSStickyHeaderFlowLayout
         
+        if layout.isKindOfClass(CSStickyHeaderFlowLayout) {
+            layout.parallaxHeaderReferenceSize = CGSizeMake(320, 200)
+        }
+        
+        
+        // Locate the nib and register it to your collection view
+        var headerNib : UINib = UINib(nibName: "CSGrowHeader", bundle: nil)
+        self.CollectionView!.registerNib(headerNib, forSupplementaryViewOfKind: CSStickyHeaderParallaxHeader, withReuseIdentifier: "header")
+    }
+    
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        if kind == CSStickyHeaderParallaxHeader {
+            let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "header", forIndexPath: indexPath)
+            return cell
+        } else if kind == UICollectionElementKindSectionHeader {
+            let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "sectionHeader", forIndexPath: indexPath)
+            
+            return cell
+        }else{
+            let cell = UICollectionReusableView();
+            return cell
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,7 +67,7 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "CellSelected" {
-            var secondScene = segue.destinationViewController as! DetailViewController
+            let secondScene = segue.destinationViewController as! DetailViewController
             let cell = sender as! UICollectionViewCell
             let indexPath = CollectionView.indexPathForCell(cell)
             secondScene.product = products[indexPath!.row]

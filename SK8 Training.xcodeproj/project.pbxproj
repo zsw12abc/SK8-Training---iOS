@@ -19,6 +19,9 @@
 		661AD7191B5E854C00D98D9F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD7181B5E854C00D98D9F /* Product.swift */; };
 		661AD71B1B5E8BFF00D98D9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD71A1B5E8BFF00D98D9F /* DetailViewController.swift */; };
 		661AD71D1B5E8C2000D98D9F /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661AD71C1B5E8C2000D98D9F /* CartViewController.swift */; };
+		66E2210E1B633B8300F9D4A8 /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E2210B1B633B8300F9D4A8 /* CSStickyHeaderFlowLayout.m */; };
+		66E2210F1B633B8300F9D4A8 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E2210D1B633B8300F9D4A8 /* CSStickyHeaderFlowLayoutAttributes.m */; };
+		66E221111B633E7D00F9D4A8 /* CSGrowHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E221101B633E7D00F9D4A8 /* CSGrowHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		661AD7181B5E854C00D98D9F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		661AD71A1B5E8BFF00D98D9F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		661AD71C1B5E8C2000D98D9F /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		66E221091B633B8200F9D4A8 /* SK8 Training-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SK8 Training-Bridging-Header.h"; sourceTree = "<group>"; };
+		66E2210A1B633B8300F9D4A8 /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
+		66E2210B1B633B8300F9D4A8 /* CSStickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayout.m; sourceTree = "<group>"; };
+		66E2210C1B633B8300F9D4A8 /* CSStickyHeaderFlowLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayoutAttributes.h; sourceTree = "<group>"; };
+		66E2210D1B633B8300F9D4A8 /* CSStickyHeaderFlowLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayoutAttributes.m; sourceTree = "<group>"; };
+		66E221101B633E7D00F9D4A8 /* CSGrowHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSGrowHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +127,12 @@
 				661AD71C1B5E8C2000D98D9F /* CartViewController.swift */,
 				660981611B5FDBA50052CDB3 /* colvwCell.swift */,
 				660981651B5FDE3B0052CDB3 /* CollectionViewController.swift */,
+				66E2210A1B633B8300F9D4A8 /* CSStickyHeaderFlowLayout.h */,
+				66E2210B1B633B8300F9D4A8 /* CSStickyHeaderFlowLayout.m */,
+				66E2210C1B633B8300F9D4A8 /* CSStickyHeaderFlowLayoutAttributes.h */,
+				66E2210D1B633B8300F9D4A8 /* CSStickyHeaderFlowLayoutAttributes.m */,
+				66E221091B633B8200F9D4A8 /* SK8 Training-Bridging-Header.h */,
+				66E221101B633E7D00F9D4A8 /* CSGrowHeader.xib */,
 			);
 			path = "SK8 Training";
 			sourceTree = "<group>";
@@ -202,6 +217,7 @@
 		661AD6DF1B5E841F00D98D9F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Shaowei Zhang";
 				TargetAttributes = {
@@ -246,6 +262,7 @@
 				661AD6F51B5E841F00D98D9F /* LaunchScreen.storyboard in Resources */,
 				661AD6F21B5E841F00D98D9F /* Assets.xcassets in Resources */,
 				661AD6F01B5E841F00D98D9F /* Main.storyboard in Resources */,
+				66E221111B633E7D00F9D4A8 /* CSGrowHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				661AD6ED1B5E841F00D98D9F /* ViewController.swift in Sources */,
+				66E2210E1B633B8300F9D4A8 /* CSStickyHeaderFlowLayout.m in Sources */,
+				66E2210F1B633B8300F9D4A8 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				661AD6EB1B5E841F00D98D9F /* AppDelegate.swift in Sources */,
 				661AD71D1B5E8C2000D98D9F /* CartViewController.swift in Sources */,
 				661AD7191B5E854C00D98D9F /* Product.swift in Sources */,
@@ -416,10 +435,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "SK8 Training/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "shaoweizhang.com.SK8-Training";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SK8 Training/SK8 Training-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -427,10 +449,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "SK8 Training/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "shaoweizhang.com.SK8-Training";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SK8 Training/SK8 Training-Bridging-Header.h";
 			};
 			name = Release;
 		};

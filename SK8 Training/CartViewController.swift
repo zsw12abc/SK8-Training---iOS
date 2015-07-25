@@ -29,7 +29,7 @@ class CartViewController: UIViewController, UITableViewDataSource, UITextFieldDe
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("CartCell") as UITableViewCell!
-        var product = products[indexPath.row] as Product
+        let product = products[indexPath.row] as Product
         
         let image = cell.viewWithTag(101) as! UIImageView
         let name = cell.viewWithTag(102) as! UILabel
